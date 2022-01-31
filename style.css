@@ -1,0 +1,549 @@
+/*Author: Pedro Parro*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*-webkit-font-smoothing: antialiased;*/
+  	/*-moz-osx-font-smoothing: grayscale;*/
+}
+body {
+    width: 100%;
+}
+/*section register*/
+section#register {
+    width: 100%;
+    height: 600px;
+    background: #999;  
+    margin-bottom: 0px;
+}
+/*section index*/
+section#index {
+    width: 100%;
+    min-height: 700px;
+    height: 50%;
+    background: #999;  
+}
+/*section research*/
+section#research {
+    width: 100%;
+    min-height: 700px;
+    height: 50%;
+    background: #999;  
+}
+/*section edit*/
+section#edit {
+    width: 100%;
+    height: 700px;
+    background: #999;   
+}
+/*h2 register*/
+#h2 {
+    background: #f6f6f6;
+    color: rgb(247, 7, 7);
+    font-size: 15px;
+    margin: 0;
+    padding-top: 80px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+}
+/*h2 index*/
+#h2-index {
+    background: #fff;
+    color: rgb(247, 7, 7);
+    font-size: 20px;
+    margin: 0;
+    padding-top: 120px;
+    padding-left: 5px;
+}
+/*h2 research*/
+#h2-research {
+    background: #fff;
+    color: rgb(247, 7, 7);
+    font-size: 20px;
+    margin: 0;
+    padding-top: 85px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+}
+/*h2 edit*/
+#h2-edit {
+    background: #fff;
+    color: rgb(247, 7, 7);
+    font-size: 20px;
+    margin: 0;
+    padding-top: 80px;
+    padding-left: 5px;
+}
+h3 {
+    background: #999;
+    border-radius: 3px;
+    padding: 5px 5px;
+    color: rgb(214, 7, 7);
+}
+/*msg*/
+div.msg {
+    height: 25px;
+    background: rgb(65, 133, 2);
+    color: #fff;
+    text-align: center;
+    padding: 5px 5px;
+    font-weight: bold;
+}
+/*logo*/
+.logo {
+    margin-top: 20px;
+    margin-left: 20px;
+    color: #fff;
+    font-weight: bold;
+}
+/*navbar*/
+.navbar .logo a {
+    font-size: 15px;
+    text-decoration: none;
+    color: rgb(214, 7, 7);
+    font-weight: bold;
+    background: #fff;
+    border-radius: 5px;
+    padding: 5px 5px;
+}
+.navbar .logo a:hover {
+    background-color: rgb(245, 6, 6);
+    color: #fff;
+    transition: .5s ease;
+}
+.navbar {
+  position: fixed;
+  width: 100%;
+  background: #333;
+  padding: 20px 0;
+  display: inline-flex;
+  margin-top: 0px;
+  z-index: 999;
+}
+.navbar li {
+    display: inline-block;
+    padding: 0 10px;
+}
+.navbar ul {
+    list-style: none;
+    float: right;
+    margin-left: 600px;
+    margin-top: 20px;
+}
+.navbar li a {
+    font-size: 15px;
+    text-decoration: none;
+    color: rgb(214, 7, 7);
+    font-weight: bold;
+    background: #fff;
+    border-radius: 5px;
+    padding: 5px 5px;
+}
+.navbar li a:hover {
+    background-color: rgb(245, 6, 6);
+    color: #fff;
+    transition: .5s ease;
+}
+/*search icon*/
+.search {
+    margin-left: 30px;
+    margin-top: 0px;
+    padding: 20px 0;
+    display: inline-flex;
+}
+.search input[type="submit"] {
+    background-color: #333;
+    width: 0;
+    height: 0;
+}
+.search input[type="text"] {
+    width: 200px;
+    height: 30px;
+    outline: 0;
+    border: 0;
+    border-radius: 50px;
+    padding-left: 10px;
+
+}
+.search i {
+    position: absolute;
+    border:none;
+    outline:none;
+    top: 46px;
+    right: 145px;
+    color: rgb(245, 7, 7);
+    z-index: 10;
+}
+
+/*page register*/
+.container {
+    width: 100%;
+    height: 450px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+div#form {
+    width: 400px;
+    height: 450px;
+    border: 1px transparent #333;
+    box-shadow: 0 0 1em rgb(68, 65, 46);
+    border-radius: 3px;
+    background: #333;
+}
+div#label {
+    text-align: center;
+    padding: 5px 5px;
+    color: rgb(250, 7, 7);
+    font-weight: bold;
+}
+div#input {
+    text-align: center;
+}
+div#textarea {
+    text-align: center;
+}
+#input input {
+    width: 350px;
+    height: 30px;
+    border-radius: 3px;
+    border: 0;
+    outline: 0;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 10px;
+} 
+textarea {
+    width: 350px;
+    height: 300px;
+    border-radius: 3px;
+    border: 10px;
+    outline: 0;
+    resize: none;
+    padding-left: 5px;
+    padding-top: 10px;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+div#btn {
+    text-align: center;
+}
+
+.container button {
+    width: 110px;
+    height: 30px;
+    background: rgb(117, 115, 115);
+    border: 0;
+    text-align: center;
+    padding: 2px 2px;
+    border-radius: 3px;
+    outline: 0;
+    margin-top: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    color: rgb(214, 7, 7);
+}
+.container button:hover {
+    background: rgb(248, 4, 4);
+    color: #fff;
+    transition: .5s;
+    font-weight: bold;
+}
+/*end page register */
+
+/*page edit*/
+.container-edit {
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.container-edit a {
+    text-decoration: none;
+    color: rgb(214, 7, 7);
+}
+.container-edit a:hover {
+    color: #fff;
+}
+div#form-edit {
+    width: 400px;
+    height: 450px;
+    border: 1px transparent #333;
+    box-shadow: 0 0 1em rgb(68, 65, 46);
+    border-radius: 3px;
+    background: #333;
+    margin-bottom: 30px;
+}
+div#form-edit a {
+    text-decoration: none;
+    color: red;
+}
+div#form-edit a:hover {
+    color: white;
+}
+#input input {
+    width: 350px;
+    height: 30px;
+    border-radius: 3px;
+    border: 0;
+    outline: 0;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: Arial, Helvetica, sans-serif;
+} 
+textarea {
+    width: 350px;
+    height: 350px;
+    border-radius: 3px;
+    border: 10px;
+    outline: 0;
+    resize: none;
+    padding-left: 5px;
+    padding-top: 10px;
+    margin-top: 10px;
+    overflow: hidden;
+    overflow-y: auto;
+    text-overflow: ellipsis;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+}
+div#btn-edit button {
+    width: 110px;
+    height: 30px;
+    background: rgb(117, 115, 115);
+    border: 0;
+    text-align: center;
+    padding: 2px 2px;
+    border-radius: 3px;
+    outline: 0;
+    margin: 5px;
+    font-weight: bold;
+    color: rgb(214, 7, 7);
+    cursor: pointer;
+    margin-left: 50px;
+}
+div#btn-edit button:hover {
+    background: rgb(248, 4, 4);
+    color: rgb(255, 255, 255);
+    transition: .5s;
+    font-weight: bold;
+}
+/*end page edit */
+
+/*page index*/
+.container-index {
+    width: 25%;
+	height: 100%;
+	position: relative;
+    display: inline-block;
+    background: #333;
+	left: 154px;
+	top: 50px;
+    text-align: center;
+    margin-top: -25px;
+    margin-bottom: 40px;
+    border-radius: 3px;
+    
+}
+.cols-index {
+    background: #fff;
+    width: 100%;
+    height: 400px;
+    margin: 0 auto;
+    border-radius: 3px;
+    padding: 10px 10px;
+    
+}
+.container-index a {
+    text-decoration: none;
+    color: red;
+}
+.container-index a:hover {
+    color: white;
+}
+#cols-index-h3 {
+    background: #333;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#cols-index-p {
+    height: 250px;
+    text-align: left;
+    cursor: default;
+    border-top: 0;
+    font-size: 14px;
+    background: #FFFFFF;
+    position: absolute;
+    max-width: 300px;
+    word-break: break-all;
+    padding: 5px 5px;
+    overflow: hidden;
+    overflow-y: auto;
+    text-overflow: ellipsis;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+}
+button#btn-index {
+    width: 130px;
+    height: 30px;
+    background: rgb(117, 115, 115);
+    border: 0;
+    text-align: center;
+    padding: 2px 2px;
+    border-radius: 3px;
+    outline: 0;
+    margin-top: 280px;
+    font-weight: bold;
+    color: rgb(214, 7, 7);
+}
+button#btn-index:hover {
+    background: rgb(248, 4, 4);
+    color: #fff;
+    transition: .5s;
+    font-weight: bold;
+}
+/*end page index*/
+
+/*research*/
+.container-research {
+    width: 25%;
+	height: 100%;
+	position: relative;
+    display: inline-block;
+    background: #333;
+	left: 154px;
+	top: 50px;
+    text-align: center;
+    margin-top: -25px;
+    margin-bottom: 40px;
+    border-radius: 3px;
+    
+}
+.cols-research {
+    background: #fff;
+    width: 100%;
+    height: 400px;
+    margin: 0 auto;
+    border-radius: 3px;
+    padding: 10px 10px;
+    
+}
+.container-research a {
+    text-decoration: none;
+    color: red;
+}
+.container-research a:hover {
+    color: white;
+}
+#cols-research-h3 {
+    background: #333;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#cols-research-p {
+    height: 250px;
+    text-align: left;
+    cursor: default;
+    border-top: 0;
+    font-size: 14px;
+    background: #FFFFFF;
+    position: absolute;
+    max-width: 300px;
+    word-break: break-all;
+    padding: 5px 5px;
+    overflow: hidden;
+    overflow-y: auto;
+    text-overflow: ellipsis;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+}
+button#btn-research {
+    width: 130px;
+    height: 30px;
+    background: rgb(117, 115, 115);
+    border: 0;
+    text-align: center;
+    padding: 2px 2px;
+    border-radius: 3px;
+    outline: 0;
+    margin-top: 280px;
+    font-weight: bold;
+    color: rgb(214, 7, 7);
+}
+button#btn-research:hover {
+    background: rgb(248, 4, 4);
+    color: #fff;
+    transition: .5s;
+    font-weight: bold;
+}
+
+/*footer*/
+footer {
+    background: #333;
+}
+footer p {
+    text-align: center;
+    padding: 20px 20px;
+    color: #fff;
+}
+footer span {
+    text-align: center;
+    color: rgb(250, 7, 7);
+}
+
+/*pagination*/
+.pagination {
+    width: 100%;
+    height: 50px;
+    background: #999;  
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.pagination a {
+    width: 100px;
+    height: 50px;
+    text-decoration: none;
+    background-color: #a5a7a9;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-align: center;
+}
+.pagination a:hover {
+    background-color: #333;
+}
+.pagination i {
+    margin-top: 17px;
+    font-size: 20px;
+}
+
+
